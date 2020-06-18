@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.economics.activity_ktv">
+
+    <item
+        android:id="@+id/action_definiton"
+        android:orderInCategory="101"
+        android:title="Определения"
+        android:visible="true"></item>
+
+    <item
+        android:id="@+id/action_graph_ktv"
+        android:orderInCategory="101"
+        android:title="График линии уровня цен(КТВ)"
+        android:visible="true"></item>
+
+    <item
+        android:id="@+id/action_rule_of_ktv"
+        android:orderInCategory="101"
+        android:title="Торговая Лемма"
+        android:visible="true"></item>
+
+    <item
+        android:id="@+id/action_example_of_trade"
+        android:orderInCategory="101"
+        android:title="Пример КТВ"
+        android:visible="true"></item>
+
+</menu>

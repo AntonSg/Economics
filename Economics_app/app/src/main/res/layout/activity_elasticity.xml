@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".activity_elasticity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/my_font"
+            android:text="Налоги. Гос регулирование"
+            android:textAlignment="textStart"
+            android:textColor="#1F1E1E"
+            android:textSize="22sp"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar2"
+        android:background="?attr/backgroundcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:context=".taxes">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="20dip"
+                android:alpha="1"
+                android:fontFamily="@font/discription_font"
+                android:text="@string/types_of_taxes"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="20dip"
+                android:alpha="1"
+                android:fontFamily="@font/discription_font"
+                android:text="@string/about_government_politics"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                app:srcCompat="@drawable/per_q_tax2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:paddingLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/percent_taxes" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/line_chart1"
+                android:layout_width="match_parent"
+                android:layout_height="200dip" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:max="100"
+                android:min="0"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Проверить" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
